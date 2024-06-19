@@ -1,0 +1,608 @@
+/* General container styling */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #ffffff;
+  min-height: 100vh;
+}
+
+/* Common section styling */
+section {
+  width: 100%;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  background: #ffffff;
+}
+
+/* Popup styling */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.popup h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.popup p {
+  font-size: 1.2em;
+}
+
+.close-popup-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 1em;
+}
+
+.close-popup-button:hover {
+  background-color: #0056b3;
+}
+
+/* Hero section styling */
+.hero-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
+}
+
+.hero-content {
+  flex: 1;
+  text-align: left;
+  color: #fff;
+  margin-left: 30px;
+}
+
+.hero-section h1 {
+  font-size: 2.5em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.sub-text {
+  font-size: 1.2em;
+  color: #ffae00;
+  margin-bottom: 20px;
+}
+
+.download-icon {
+  font-size: 3em;
+  color: #ffae00;
+  margin: 20px 0;
+}
+
+.description {
+  font-size: 1.1em;
+  color: #ddd;
+  margin: 20px 0;
+}
+
+/* Input section styling */
+.input-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px 0;
+}
+
+.input-section input[type="text"] {
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.privacy-policy {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+}
+
+.privacy-policy input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.get-app-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #ffae00;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.get-app-button:hover {
+  background-color: #cc8f00;
+}
+
+/* Image styling */
+.hero-image-container {
+  flex: 1;
+  text-align: right;
+  position: relative;
+}
+
+.hero-image {
+  max-width: 80%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+.desktop-image {
+  display: block;
+}
+
+.mobile-image {
+  display: none;
+}
+
+/* About DFS section styling *//* About DFS Section */
+.about-dfs-section {
+  text-align: center;
+  background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d); /* Gradient background */
+  padding: 50px 20px; /* Padding for spacing */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  margin: 20px auto; /* Center the section */
+  max-width: 1200px; /* Max width for larger screens */
+  color: white; /* Text color */
+}
+
+.about-dfs-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: white;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Text shadow for emphasis */
+}
+
+.dfs-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px; /* Spacing between items */
+}
+
+.dfs-text {
+  max-width: 800px; /* Limit the width for readability */
+  text-align: left; /* Align text to the left */
+  background: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+  padding: 20px; /* Padding for content spacing */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.dfs-text h3 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #ffae00; /* Bright color for subheadings */
+}
+
+.dfs-text p, .dfs-text ul {
+  font-size: 1.1em;
+  line-height: 1.6; /* Line height for readability */
+  color: #ddd; /* Slightly lighter text color */
+  margin-bottom: 15px; /* Spacing between paragraphs */
+}
+
+.dfs-text ul {
+  padding-left: 20px; /* Indent for list */
+  list-style-type: disc; /* Disc style for list items */
+}
+
+.dfs-text ul li {
+  margin-bottom: 10px; /* Space between list items */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-dfs-section {
+    padding: 30px 15px;
+  }
+
+  .about-dfs-section h2 {
+    font-size: 2em;
+  }
+
+  .dfs-text h3 {
+    font-size: 1.5em;
+  }
+
+  .dfs-text p, .dfs-text ul {
+    font-size: 1em;
+  }
+}
+
+/* Features section styling */
+.features-section {
+  text-align: center;
+  background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
+}
+
+.features-section h2 {
+  font-size: 2em;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature {
+  text-align: center;
+  max-width: 200px;
+  margin: 20px;
+  color: white;
+}
+
+.feature i {
+  font-size: 2em;
+  color: #ffae00;
+  margin-bottom: 10px;
+}
+
+.feature h3 {
+  font-size: 1.2em;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 1em;
+  color: white;
+}
+
+/* Testimonials section styling */
+.testimonials-section {
+  text-align: center;
+  background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
+}
+
+.testimonials-section h2 {
+  font-size: 2em;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  max-width: 300px;
+  margin: 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.testimonial h4 {
+  font-size: 1em;
+  color: #007bff;
+}
+
+/* Call-to-action section styling */
+.call-to-action-section {
+  text-align: center;
+  background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
+}
+
+.call-to-action-section h2 {
+  font-size: 2em;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.call-to-action-section p {
+  font-size: 1.2em;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+.download-now-button {
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-size: 1.2em;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.download-now-button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+/* How to Play section styling */
+.how-to-play-section {
+  text-align: center;
+  background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
+}
+
+.how-to-play-section h2 {
+  font-size: 2em;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: white;
+}
+
+.step {
+  max-width: 45%;
+  min-width: 200px;
+  margin: 20px;
+  padding: 20px;
+  text-align: left;
+  background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.step h3 {
+  font-size: 1.2em;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.step p {
+  font-size: 1em;
+  color: white;
+}
+
+/* FAQ section styling */
+.faq-section {
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+.section-tittle {
+  color: white;
+}
+
+.faq-section h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.faqs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.faq {
+  max-width: 45%;
+  min-width: 200px;
+  margin: 20px;
+  padding: 20px;
+  text-align: left;
+  background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq h3 {
+  font-size: 1.2em;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.faq p {
+  font-size: 1em;
+  color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image-container {
+    text-align: center;
+  }
+
+  .hero-image {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .features {
+    flex-direction: column;
+  }
+
+  .feature {
+    max-width: 100%;
+  }
+
+  .testimonials {
+    flex-direction: column;
+  }
+
+  .testimonial {
+    max-width: 100%;
+  }
+
+  .steps,
+  .faqs {
+    flex-direction: column;
+  }
+
+  .step,
+  .faq {
+    max-width: 100%;
+  }
+
+  .desktop-image {
+    display: none;
+  }
+
+  .mobile-image {
+    display: block;
+    max-width: 100%;
+  }
+
+  /* Remove the rule hiding all content except the mobile image */
+  .hero-content,
+  .about-dfs-section,
+  .features-section,
+  .testimonials-section,
+  .call-to-action-section,
+  .how-to-play-section,
+  .faq-section,
+  .whatsapp-container {
+    display: block; /* Show these sections on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section h1 {
+    font-size: 1.8em;
+  }
+
+  .description {
+    font-size: 0.9em;
+  }
+
+  .features-section h2,
+  .testimonials-section h2,
+  .call-to-action-section h2,
+  .how-to-play-section h2,
+  .faq-section h2,
+  .about-dfs-section h2 {
+    font-size: 1.8em;
+  }
+
+  .call-to-action-section p {
+    font-size: 1em;
+  }
+
+  .cta-button {
+    font-size: 0.9em;
+    padding: 8px 16px;
+  }
+}
+
+/* WhatsApp Icon and Text */
+.whatsapp-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 1000;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.whatsapp-icon {
+  font-size: 40px;
+  color: #25D366;
+}
+
+.whatsapp-text {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #25D366;
+  white-space: nowrap;
+}
+
+.whatsapp-container:hover {
+  background-color: #25D366;
+}
+
+.whatsapp-container:hover .whatsapp-icon,
+.whatsapp-container:hover .whatsapp-text {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .whatsapp-container {
+    bottom: 10px;
+    right: 10px;
+    padding: 8px;
+  }
+
+  .whatsapp-icon {
+    font-size: 30px;
+  }
+
+  .whatsapp-text {
+    font-size: 12px;
+  }
+}

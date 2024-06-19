@@ -1,0 +1,77 @@
+/* HowToPlay.css */
+
+/* General container styling */
+.how-to-play-section {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .how-to-play-section h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .highlight {
+    color: #7e57c2; /* Use a striking color for highlighting */
+  }
+  
+  .section-description {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .card {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    background: linear-gradient(to bottom right, #2c3e50, #3498db);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card-content {
+    padding: 20px;
+    color: #fff;
+    text-align: left;
+  }
+  
+  .card-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .card-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .cards-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      max-width: 90%;
+      margin-bottom: 20px;
+    }
+  }
+  

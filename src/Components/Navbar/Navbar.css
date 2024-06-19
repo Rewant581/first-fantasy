@@ -1,0 +1,137 @@
+/* Base styles for the navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #1e3c72, #2a5298); /* Gradient background */
+  color: white;
+  font-family: 'Arial, sans-serif';
+  width: 100%; /* Ensure it spans the full width */
+  position: fixed; /* Make the navbar stick to the top */
+  top: 0; /* Align to the top of the page */
+  left: 0; /* Align to the left edge */
+  z-index: 1000; /* Ensure it stays above other content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  margin: 0; /* Remove any margin to avoid gaps */
+}
+
+.navbar-left .navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 20px; /* Consistent gap for better spacing */
+  align-items: center; /* Align items vertically */
+  margin-right: 150px;
+}
+
+.navbar-right .nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s, transform 0.3s; /* Added transform for a subtle lift effect */
+}
+
+.navbar-right .nav-link:hover {
+  color: blueviolet;
+  transform: scale(1.1); /* Slightly enlarge the link on hover */
+}
+
+/* Button in the navbar */
+.navbar-right .nav-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  text-align: center; /* Center text inside the button */
+}
+
+.navbar-right .nav-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Download button */
+.navbar-right .download-button {
+  display: none; /* Hide by default */
+  background-color: #28a745; /* Green background for visibility */
+}
+
+.navbar-right .download-button:hover {
+  background-color: #218838;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar-right {
+    position: absolute;
+    top: 60px; /* Position just below the navbar */
+    right: 0;
+    background-color: #1e3c72; /* Solid background for mobile */
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    display: none;
+    transition: max-height 0.3s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .navbar-right.active {
+    display: flex;
+    max-height: 300px; /* Adjust as needed for smooth dropdown */
+  }
+
+  .navbar-toggle {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+  }
+
+  .navbar-toggle .icon {
+    font-size: 30px;
+  }
+
+  /* Adjust nav links and button in mobile view */
+  .navbar-right .nav-link, .navbar-right .nav-button {
+    font-size: 18px;
+    margin: 10px 0; /* Add spacing between items */
+    width: 90%; /* Full width for better touch interaction */
+    text-align: center;
+  }
+
+  /* Show the download button prominently on mobile */
+  .navbar-right .download-button {
+    display: block; /* Show download button on mobile */
+    width: 90%; /* Full width on mobile */
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 769px) {
+  .navbar-toggle {
+    display: none;
+  }
+}
+
+/* Reset default body and margin/padding to avoid gaps */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure content below the navbar is not hidden behind it */
+.content {
+  margin-top: 70px; /* Adjust this value based on the navbar height */
+}

@@ -1,0 +1,122 @@
+/* Base styles for the footer */
+.footer {
+  background-color: black;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Footer logo styling */
+.footer-logo {
+  margin-bottom: 20px;
+}
+
+.footer-logo h2 {
+  color: #ffae00;
+}
+
+/* Navigation links in the footer */
+.footer-nav {
+  margin-bottom: 20px;
+}
+
+.footer-nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Payment icons */
+.footer-payment img {
+  margin: 5px;
+  width: 50px;
+  height: 30px;
+}
+
+/* Disclaimer text */
+.footer-disclaimer p {
+  margin: 5px 0;
+  font-size: 12px;
+}
+
+/* Responsive design adjustments */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-nav a {
+    margin: 5px;
+    font-size: 12px;
+  }
+
+  .footer-payment img {
+    width: 40px;
+    height: 25px;
+  }
+
+  .footer-disclaimer p {
+    font-size: 10px;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+  .footer {
+    padding: 15px;
+  }
+
+  .footer-logo h2 {
+    font-size: 1.5em;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  .footer-nav a {
+    display: block;
+    margin: 5px 0;
+    font-size: 14px; /* Keep font size legible */
+  }
+
+  .footer-payment {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-payment img {
+    width: 35px;
+    height: 20px;
+    margin: 5px 2px; /* Reduced margin for better fit */
+  }
+
+  .footer-disclaimer p {
+    font-size: 10px;
+    padding: 0 10px; /* Add padding for better spacing */
+  }
+}
